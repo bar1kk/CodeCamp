@@ -13,10 +13,10 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 <form action="https://register-demo.freecodecamp.org" id="survey-form">
     <fieldset>
-        <label>Name <input type="text" name="name-label" id="name-label" placeholder="Enter your name" required></label>
-        <label>Email <input type="email" name="email-label" id="email-label" placeholder="Enter your email"
+        <label id="name-label">Name <input type="text" name="name-label" id="name"  placeholder="Enter your name" required></label>
+        <label id="email-label">Email <input type="email" name="email-label" id="email" placeholder="Enter your email"
                 required></label>
-        <label>Age <span class="optional">(optional)</span> <input type="number" name="number-label" id="number-label" min="13" max="100"
+        <label id="number-label">Age <span class="optional">(optional)</span> <input type="number" name="number-label" id="number" min="13" max="100"
                 placeholder="Age"></label>
         <label class="last-label-fieldset" >Would you recommend freeCodeCamp to a friend?
             <select name="role">
@@ -31,11 +31,11 @@
     </fieldset>
     <fieldset>
         <p class="quest">Would you recommend freeCodeCamp?</p>
-        <label class="otmetka"> <input type="radio" name="recommend" > Definitely</label>
-        <label class="otmetka"> <input type="radio" name="recommend"> Maybe</label>
-        <label class="otmetka lastotm"> <input type="radio" name="recommend"> Not sure</label>
+        <label class="otmetka"> <input type="radio" name="recommend" value="definitely" > Definitely</label>
+        <label class="otmetka"> <input type="radio" name="recommend" value="maybe"> Maybe</label>
+        <label class="otmetka lastotm"> <input type="radio" name="recommend" value="not-sure"> Not sure</label>
         <label class="otmetka">What is your favorite feature of freeCodeCamp?
-            <select name="feature">
+            <select name="feature" id="dropdown">
                 <option value="" disabled selected>Select an option</option>
                 <option value="1">Challanges</option>
                 <option value="2">Projects</option>
@@ -65,7 +65,7 @@
         <p class="quest">Any comments or suggestions?
             <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
         </p>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" id="submit" />
     </fieldset>
 </form>
 </body>
